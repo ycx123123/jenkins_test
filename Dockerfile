@@ -11,8 +11,8 @@ RUN npm install --registry=https://registry.npm.taobao.org
 
 # 将上下文里到项目文件拷贝到工作目录
 COPY . ./
-# 暴露容器的3006端口
-EXPOSE 3006
+# 暴露容器的3000端口
+EXPOSE 3000
 
 # 启动node服务
 CMD [ "node", "app.js" ]

@@ -1,4 +1,4 @@
-var express = require('express');
+/*var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -57,4 +57,12 @@ app.use(function(err, req, res, next) {
 });
 
 
-module.exports = app;
+module.exports = app;*/
+
+const http = require('http')
+
+http.createServer((req, res) => {
+    res.end('jenkins t2')
+}).listen(3000, () => {
+    console.log('running on port 3000');
+})
